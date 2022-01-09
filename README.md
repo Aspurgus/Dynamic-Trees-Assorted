@@ -1,8 +1,5 @@
-# Aspr And Alliums
+# Dynamic Trees Assorted
 
-I don't know whats happening or  
-what i'm doing kek-
+Adding various trees to the Dynamic Trees mod
 
-look at THE PLAN.txt to find out what  
-i'm trying to do, ignore the ideas those  
-are dreams
+Look at THE PLAN.txt to find the plan
