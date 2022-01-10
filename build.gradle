@@ -73,6 +73,10 @@ dependencies {
 
     minecraft "net.minecraftforge:forge:${project.minecraft}-${project.forge}"
 
+    //Dynamic Trees
+    implementation fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-${minecraft}:${property("dynamicTreesVersion")}")
+    runtimeOnly fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-${minecraft}:${property("dynamicTreesPlusVersion")}")
+
 }
 
 repositories {
@@ -83,7 +87,9 @@ repositories {
     maven {
         url  "https://maven.jaackson.me"
     }
-
+    maven {
+        url "https://harleyoconnor.com/maven"
+    }
 }
 
 jar {
