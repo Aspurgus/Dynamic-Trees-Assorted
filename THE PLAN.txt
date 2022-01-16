@@ -1,17 +1,36 @@
+Currently Working:
+-Abundance
+    -Redbud
+-Disabling normal tree gen
+
+
 -Dynamic Trees
     -Abundance
         -Redbud Trees
         -Jacaranda
     -Atmospheric
-        -Yes
+        -Yucca
+        -Morado
+        -Aspen
     -Autumnity
-        -Maple Trees
+        -Red Maple Tree
+        -Yellow Maple Tree
+        -Maple Tree
+        -Orange Maple Tree
     -Bayou Blues
+        -Cypress
     -Druidcraft
+        -Add Elder Trees
+        -Add Darkwood Trees
     -Environmental
-        -Uh Huh
+        -Cherry
+        -Willow
+    -Upgrade Aquatic
+        -Add River Trees
+    -Terra Incognita
+        -Disable Dynamic Trees Apple Trees
+        -Add Terra Incognita Apple Trees
+        -Add Hazlenut Trees
     -Farmers Respite
         -Tea Trees ? maybe
         -Coffee
-    -Upgrade Aquatic
-        -River Trees

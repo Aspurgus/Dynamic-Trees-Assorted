@@ -1,0 +1,32 @@
+[
+  {
+    "__comment" : "Start by making any abundance biome default to jacarandas",
+    "select": { "name": "abundance:.*" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "treesassorted:jacaranda" : 2,
+          "treesassorted:flowering_jacaranda" : 6
+        }
+      },
+      "density": 0,
+      "chance" : "standard"
+    }
+  },
+  {
+    "__comment": "Sparsley populate lavender fields",
+    "select": { "name": "abundance:lavender_fields" },
+    "apply": {
+      "density": 0,
+      "chance": 0.05
+    }
+  },
+  {
+    "__comment": "Slightly increase density in forests",
+    "select": { "name": "abundance:lavender_forest" },
+    "apply": {
+      "density": 0,
+      "chance": 0.7
+    }
+  }
+]
