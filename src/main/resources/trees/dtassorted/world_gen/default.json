@@ -5,8 +5,8 @@
     "apply": {
       "species" : {
         "random" : {
-          "treesassorted:jacaranda" : 2,
-          "treesassorted:flowering_jacaranda" : 6
+          "dtassorted:jacaranda" : 2,
+          "dtassorted:flowering_jacaranda" : 6
         }
       },
       "density": 0,

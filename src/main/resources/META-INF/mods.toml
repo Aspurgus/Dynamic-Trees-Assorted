@@ -4,7 +4,7 @@ loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft versio
 license="All rights reserved"
 
 [[mods]] #mandatory
-modId="dynamictreesassorted" #mandatory
+modId="dtassorted" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Dynamic Trees: Assorted" #mandatory
 logoFile="logo.png" #optional
@@ -14,7 +14,7 @@ description='''
 Lil cottage in the fields, full of plants and comfy friends. Come over if you want cinnamon apple pie !
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.dynamictreesassorted]] #optional
+[[dependencies.dtassorted]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -26,7 +26,7 @@ Lil cottage in the fields, full of plants and comfy friends. Come over if you wa
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.dynamictreesassorted]]
+[[dependencies.dtassorted]]
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version

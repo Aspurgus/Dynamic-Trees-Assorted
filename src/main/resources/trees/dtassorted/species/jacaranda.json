@@ -1,11 +1,11 @@
 {
-  "family": "treesassorted:jacaranda",
+  "family": "dtassorted:jacaranda",
   "tapering": 0.6,
   "signal_energy": 6.0,
   "up_probability": 0,
   "lowest_branch_height": 3,
   "growth_rate": 0.75,
-  "leaves_properties": "treesassorted:jacaranda",
+  "leaves_properties": "dtassorted:jacaranda",
   "environment_factors" : {
     "cold": 0.5,
     "hot": 0.5,
