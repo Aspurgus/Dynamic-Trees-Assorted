@@ -30,8 +30,6 @@ Currently Working:
     -Environmental
         -Cherry
         -Willow
-    -Upgrade Aquatic
-        -Add River Trees
     -Terra Incognita
         -Disable Dynamic Trees Apple Trees
         -Add Terra Incognita Apple Trees

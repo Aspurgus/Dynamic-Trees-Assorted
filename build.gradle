@@ -87,6 +87,7 @@ dependencies {
     implementation fg.deobf("curse.maven:bayoublues-452344:3342861")
     implementation fg.deobf("curse.maven:terraincognita-435386:3587138")
     implementation fg.deobf("curse.maven:farmersrespite-551453:3566031")
+    implementation fg.deobf("curse.maven:upgradeaquaticdt-570119:3612950")
 
     //Dependency Dependencies
     runtimeOnly fg.deobf("curse.maven:cuneiform-419176:3320687")

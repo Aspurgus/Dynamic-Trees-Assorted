@@ -1,7 +1,14 @@
 {
   "variants": {
-    "": {
-      "model": "abundance:block/flowering_jacaranda_leaves"
-    }
+    "": [
+      {
+        "model" : "abundance:block/flowering_jacaranda_leaves",
+        "weight" : 4
+      },
+      {
+        "model" : "abundance:block/budding_jacaranda_leaves",
+        "weight" : 1
+      }
+    ]
   }
 }

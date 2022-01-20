@@ -5,7 +5,7 @@
     "apply": {
       "species" : {
         "random" : {
-          "dtassorted:jacaranda" : 2,
+          "dtassorted:jacaranda" : 4,
           "dtassorted:flowering_jacaranda" : 6
         }
       },
@@ -14,18 +14,26 @@
     }
   },
   {
+    "__comment": "Cancel standard Jacaranda tree features from any biome.",
+     "select": { "type": "overworld", "names": ["abundance.*","minecraft.*"] },
+    "cancellers": {
+      "type": "dtassorted:jacaranda",
+      "namespaces": ["abundance", "minecraft"]
+    }
+  },
+  {
     "__comment": "Sparsley populate lavender fields",
     "select": { "name": "abundance:lavender_fields" },
     "apply": {
       "density": 0,
-      "chance": 0.05
+      "chance": 0.1
     }
   },
   {
     "__comment": "Slightly increase density in forests",
     "select": { "name": "abundance:lavender_forest" },
     "apply": {
-      "density": 0,
+      "density": 1,
       "chance": 0.7
     }
   }
