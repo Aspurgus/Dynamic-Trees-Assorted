@@ -2,6 +2,6 @@
   "loader": "dynamictrees:branch",
   "textures": {
     "bark": "abundance:block/stripped_redbud_log",
-    "rings": "abundance:block/redbud_log_top"
+    "rings": "abundance:block/stripped_redbud_log_top"
   }
 }

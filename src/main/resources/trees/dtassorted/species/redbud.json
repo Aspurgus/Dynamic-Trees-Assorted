@@ -16,7 +16,7 @@
   },
   "primitive_sapling": {
     "sapling_item": "abundance:redbud_sapling",
-    "can_craft_seed_to_sapling": false
+    "can_craft_seed_to_sapling": true
   },
   "perfect_biomes": { "name": "abundance:.*lavender.*" },
   "features" : [
