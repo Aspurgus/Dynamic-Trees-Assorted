@@ -7,6 +7,7 @@ import com.ferreusveritas.dynamictrees.blocks.leaves.LeavesProperties;
 import com.ferreusveritas.dynamictrees.blocks.rootyblocks.SoilProperties;
 import com.ferreusveritas.dynamictrees.trees.Family;
 import com.ferreusveritas.dynamictrees.trees.Species;
+import com.minecraftabnormals.autumnity.core.registry.AutumnityFeatures;
 import com.teamaurora.abundance.core.registry.AbundanceFeatures.Configured;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.ISeedReader;
@@ -38,7 +39,6 @@ public class DTAssorted
 
         eventBus.addListener(this::commonSetup);
         eventBus.addListener(this::clientSetup);
-        eventBus.addListener(this::gatherData);
 //
 //        DTAssortedRegistry.setup();
 
@@ -49,20 +49,19 @@ public class DTAssorted
 
     private void commonSetup(final FMLCommonSetupEvent event){
 
-        this.clearConfiguredFeature(Configured.JACARANDA);
-        this.clearConfiguredFeature(Configured.FLOWERING_JACARANDA);
+//        this.clearConfiguredFeature(AutumnityFeatures.Configured.MAPLE_TREE);
+//        this.clearConfiguredFeature(Configured.FLOWERING_JACARANDA);
 
     }
 
-    private void clearConfiguredFeature(ConfiguredFeature<?, ?> configuredFeature) {
-        Feature<NoFeatureConfig> nullFeature = new Feature<NoFeatureConfig>(NoFeatureConfig.CODEC) {
-            public boolean generate(@Nonnull ISeedReader p_241855_1_, @Nonnull ChunkGenerator p_241855_2_, @Nonnull Random p_241855_3_, @Nonnull BlockPos p_241855_4_, @Nonnull NoFeatureConfig p_241855_5_) {
-                return false;
-            }
-        };
-        configuredFeature.feature = nullFeature;
-        configuredFeature.config = NoFeatureConfig.INSTANCE;
-    }
+//    private void clearConfiguredFeature(ConfiguredFeature<?, ?> configuredFeature) {
+//        Feature<NoFeatureConfig> nullFeature = new Feature<NoFeatureConfig>(NoFeatureConfig.CODEC) {
+//            public boolean place(@Nonnull ISeedReader p_241855_1_, @Nonnull ChunkGenerator p_241855_2_, @Nonnull Random p_241855_3_, @Nonnull BlockPos p_241855_4_, @Nonnull NoFeatureConfig p_241855_5_) {
+//                return false;
+//            }
+//        };
+//        configuredFeature.feature =
+//    }
 
     private void clientSetup(final FMLClientSetupEvent event) {
         //Stuff and Things
