@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "abundance:block/apple/log",
+    "rings": "abundance:block/apple/log_top"
+  }
+}

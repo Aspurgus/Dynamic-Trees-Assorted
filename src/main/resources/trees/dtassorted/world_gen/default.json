@@ -1,7 +1,39 @@
 [
   {
+    "__comment": "Cancel Abundance tree features from any abundance biome.",
+    "select": { "name": "abundance.*" },
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespace": "abundance"
+    }
+  },
+  {
+    "__comment": "Cancel Abundance tree features from any abundance biome.",
+    "select": { "name": "!abundance.*", "type": "overworld" },
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespace": "abundance"
+    }
+  },
+  {
+    "__comment": "Cancels Autumnity tree features from any biome.",
+    "select": { "type": "overworld" },
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespace": "autumnity"
+    }
+  },
+  {
+    "__comment": "Cancels Autumnity tree features from autumnity biomes.",
+    "select": { "name": "autumnity.*" },
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": ["autumnity","minecraft"]
+    }
+  },
+  {
     "__comment" : "Start by making any abundance biome default to jacarandas",
-    "select": { "name": "abundance:.*" },
+    "select": { "name": "abundance.*" },
     "apply": {
       "species" : {
         "random" : {
@@ -14,19 +46,11 @@
     }
   },
   {
-    "__comment": "Cancel standard Jacaranda tree features from any biome.",
-     "select": { "type": "overworld", "names": ["abundance.*","minecraft.*"] },
-    "cancellers": {
-      "type": "dtassorted:jacaranda",
-      "namespaces": ["abundance", "minecraft"]
-    }
-  },
-  {
     "__comment": "Sparsley populate lavender fields",
     "select": { "name": "abundance:lavender_fields" },
     "apply": {
       "density": 0,
-      "chance": 0.1
+      "chance": 0.2
     }
   },
   {
