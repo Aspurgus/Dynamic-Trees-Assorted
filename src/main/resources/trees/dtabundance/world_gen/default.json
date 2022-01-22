@@ -9,26 +9,10 @@
   },
   {
     "__comment": "Cancel Abundance tree features from any abundance biome.",
-    "select": { "name": "!abundance.*", "type": "overworld" },
+    "select": { "name": "!abundance.*", "type": "dynamictrees:overworld" },
     "cancellers": {
       "type": "dynamictrees:tree",
       "namespace": "abundance"
-    }
-  },
-  {
-    "__comment": "Cancels Autumnity tree features from any biome.",
-    "select": { "type": "overworld" },
-    "cancellers": {
-      "type": "dynamictrees:tree",
-      "namespace": "autumnity"
-    }
-  },
-  {
-    "__comment": "Cancels Autumnity tree features from autumnity biomes.",
-    "select": { "name": "autumnity.*" },
-    "cancellers": {
-      "type": "dynamictrees:tree",
-      "namespaces": ["autumnity","minecraft"]
     }
   },
   {
@@ -37,8 +21,8 @@
     "apply": {
       "species" : {
         "random" : {
-          "dtassorted:jacaranda" : 4,
-          "dtassorted:flowering_jacaranda" : 6
+          "dtabundance:jacaranda" : 4,
+          "dtabundance:flowering_jacaranda" : 6
         }
       },
       "density": 0,

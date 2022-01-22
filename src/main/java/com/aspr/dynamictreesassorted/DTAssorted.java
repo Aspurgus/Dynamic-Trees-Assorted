@@ -41,8 +41,10 @@ public class DTAssorted
         eventBus.addListener(this::clientSetup);
 //
 //        DTAssortedRegistry.setup();
-
         RegistryHandler.setup(MODID);
+
+        RegistryHandler.setup("dtabundance");
+        RegistryHandler.setup("dtterraincognita");
         MinecraftForge.EVENT_BUS.register(this);
 
     }

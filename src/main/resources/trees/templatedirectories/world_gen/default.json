@@ -1,0 +1,10 @@
+[
+  {
+    "__comment": "Canceler",
+    "select": { "name": "" },
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespace": ""
+    }
+  }
+]

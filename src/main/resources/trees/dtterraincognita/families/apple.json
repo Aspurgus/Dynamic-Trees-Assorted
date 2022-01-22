@@ -1,6 +1,6 @@
 {
-  "common_leaves": "dtassorted:apple",
-  "common_species": "dtassorted:apple",
+  "common_leaves": "dtterraincognita:apple",
+  "common_species": "dtterraincognita:apple",
   "primitive_log": "terraincognita:apple_log",
   "primitive_stripped_log": "terraincognita:stripped_apple_log",
   "max_branch_radius": 6
