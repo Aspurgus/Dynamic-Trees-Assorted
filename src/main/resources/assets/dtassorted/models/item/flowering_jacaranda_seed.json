@@ -1,6 +1,0 @@
-{
-  "parent": "dynamictrees:item/standard_seed",
-  "textures": {
-    "layer0": "dtassorted:item/flowering_jacaranda_seed"
-  }
-}

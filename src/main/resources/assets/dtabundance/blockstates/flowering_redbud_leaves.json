@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "abundance:block/flowering_redbud_leaves",
+        "weight": 9
+      },
+      {
+        "model": "abundance:block/budding_redbud_leaves",
+        "weight": 1
+      }
+    ]
+  }
+}

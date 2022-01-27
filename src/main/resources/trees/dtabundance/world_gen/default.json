@@ -1,28 +1,12 @@
 [
   {
-    "__comment": "Cancel Abundance tree features from any abundance biome.",
-    "select": { "name": "abundance.*" },
-    "cancellers": {
-      "type": "dynamictrees:tree",
-      "namespace": "abundance"
-    }
-  },
-  {
-    "__comment": "Cancel Abundance tree features from any abundance biome.",
-    "select": { "name": "!abundance.*", "type": "dynamictrees:overworld" },
-    "cancellers": {
-      "type": "dynamictrees:tree",
-      "namespace": "abundance"
-    }
-  },
-  {
     "__comment" : "Start by making any abundance biome default to jacarandas",
     "select": { "name": "abundance.*" },
     "apply": {
       "species" : {
         "random" : {
-          "dtabundance:jacaranda" : 4,
-          "dtabundance:flowering_jacaranda" : 6
+          "dtabundance:jacaranda" : 3,
+          "dtabundance:flowering_jacaranda" : 5
         }
       },
       "density": 0,
@@ -33,16 +17,40 @@
     "__comment": "Sparsley populate lavender fields",
     "select": { "name": "abundance:lavender_fields" },
     "apply": {
+      "species" : {
+        "random": {
+          "dtabundance:flowering_redbud": 2,
+          "dtabundance:jacaranda" : 3,
+          "dtabundance:flowering_jacaranda" : 5
+        }
+      },
       "density": 0,
-      "chance": 0.2
+      "chance": 0.1
     }
   },
   {
     "__comment": "Slightly increase density in forests",
     "select": { "name": "abundance:lavender_forest" },
     "apply": {
-      "density": 1,
-      "chance": 0.7
+      "density": [ 0.5 ],
+      "chance": 0.7,
+      "forestness": 0.6
+    }
+  },
+  {
+    "__comment" : "Default for a Forest which generates a Birch Tree 1/5 of the time.",
+    "select": { "type": "forest", "name": "minecraft:.*" },
+    "apply": {
+      "species" : {
+        "method" : "splice_before",
+        "random" : {
+          "..." : 20,
+          "dtabundance:redbud": 1
+        }
+      },
+      "density": [ 1 ],
+      "chance": 1.0,
+      "forestness" : 1.0
     }
   }
 ]

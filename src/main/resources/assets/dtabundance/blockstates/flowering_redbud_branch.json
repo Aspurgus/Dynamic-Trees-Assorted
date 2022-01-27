@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "":
+      [
+        {
+          "model": "dtabundance:block/flowering_redbud_branch",
+          "weight": 1
+        },
+        {
+          "model": "dtabundance:block/redbud_branch",
+          "weight": 4
+        }
+      ]
+  }
+}

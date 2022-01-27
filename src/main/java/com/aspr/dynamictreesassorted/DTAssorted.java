@@ -8,6 +8,7 @@ import com.ferreusveritas.dynamictrees.blocks.rootyblocks.SoilProperties;
 import com.ferreusveritas.dynamictrees.trees.Family;
 import com.ferreusveritas.dynamictrees.trees.Species;
 import com.minecraftabnormals.autumnity.core.registry.AutumnityFeatures;
+import com.teamaurora.abundance.core.registry.AbundanceFeatures;
 import com.teamaurora.abundance.core.registry.AbundanceFeatures.Configured;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.ISeedReader;
@@ -39,31 +40,29 @@ public class DTAssorted
 
         eventBus.addListener(this::commonSetup);
         eventBus.addListener(this::clientSetup);
-//
-//        DTAssortedRegistry.setup();
+
         RegistryHandler.setup(MODID);
 
         RegistryHandler.setup("dtabundance");
         RegistryHandler.setup("dtterraincognita");
         MinecraftForge.EVENT_BUS.register(this);
 
+        //Abundances
+        clearConfiguredFeature(Configured.REDBUD);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event){
-
-//        this.clearConfiguredFeature(AutumnityFeatures.Configured.MAPLE_TREE);
-//        this.clearConfiguredFeature(Configured.FLOWERING_JACARANDA);
-
+    private void commonSetup(final FMLCommonSetupEvent event) {
     }
 
-//    private void clearConfiguredFeature(ConfiguredFeature<?, ?> configuredFeature) {
-//        Feature<NoFeatureConfig> nullFeature = new Feature<NoFeatureConfig>(NoFeatureConfig.CODEC) {
-//            public boolean place(@Nonnull ISeedReader p_241855_1_, @Nonnull ChunkGenerator p_241855_2_, @Nonnull Random p_241855_3_, @Nonnull BlockPos p_241855_4_, @Nonnull NoFeatureConfig p_241855_5_) {
-//                return false;
-//            }
-//        };
-//        configuredFeature.feature =
-//    }
+    @SuppressWarnings("unchecked")
+    private void clearConfiguredFeature (ConfiguredFeature<?,?> configuredFeature){
+        Feature<NoFeatureConfig> nullFeature = new Feature<NoFeatureConfig>(NoFeatureConfig.CODEC){
+            @Override public boolean generate(@Nonnull ISeedReader p_241855_1_,@Nonnull  ChunkGenerator p_241855_2_,@Nonnull  Random p_241855_3_,@Nonnull  BlockPos p_241855_4_,@Nonnull  NoFeatureConfig p_241855_5_) { return false; }
+        };
+        ConfiguredFeature<NoFeatureConfig,Feature<NoFeatureConfig>> castedConfigured = (ConfiguredFeature<NoFeatureConfig,Feature<NoFeatureConfig>>)configuredFeature;
+        castedConfigured.feature = nullFeature;
+        castedConfigured.config = NoFeatureConfig.INSTANCE;
+    }
 
     private void clientSetup(final FMLClientSetupEvent event) {
         //Stuff and Things

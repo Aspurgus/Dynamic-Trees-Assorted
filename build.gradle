@@ -82,12 +82,12 @@ dependencies {
     implementation fg.deobf("curse.maven:upgradeaquatic-326895:3561148")
 
     //Other Mods
-    implementation fg.deobf("curse.maven:abundance-452345:3250108")
+    implementation fg.deobf("curse.maven:abundance-452345:3224378")
     implementation fg.deobf("curse.maven:druidcraft-340991:3507029")
     implementation fg.deobf("curse.maven:bayoublues-452344:3342861")
     implementation fg.deobf("curse.maven:terraincognita-435386:3587138")
     implementation fg.deobf("curse.maven:farmersrespite-551453:3566031")
-//    implementation fg.deobf("curse.maven:upgradeaquaticdt-570119:3612950")
+    implementation fg.deobf("curse.maven:upgradeaquaticdt-570119:3612950")
 
     //Dependency Dependencies
     runtimeOnly fg.deobf("curse.maven:cuneiform-419176:3320687")

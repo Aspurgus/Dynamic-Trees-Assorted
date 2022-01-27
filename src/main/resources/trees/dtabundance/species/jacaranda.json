@@ -15,5 +15,6 @@
   "perfect_biomes": { "name": "minecraft:.*lavender.*" },
   "primitive_sapling": "abundance:jacaranda_sapling",
   "features" : [
+    "bee_nest"
   ]
 }

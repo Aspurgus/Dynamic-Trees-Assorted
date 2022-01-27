@@ -20,5 +20,6 @@
   },
   "perfect_biomes": { "types": ["forest","plains"] },
   "features" : [
+    "bee_nest"
   ]
 }

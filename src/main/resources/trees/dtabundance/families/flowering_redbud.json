@@ -1,7 +1,7 @@
 {
   "common_leaves": "dtabundance:flowering_redbud",
   "common_species": "dtabundance:flowering_redbud",
-  "primitive_log": "abundance:redbud_log",
+  "primitive_log": "abundance:flowering_redbud_log",
   "primitive_stripped_log": "abundance:stripped_redbud_log",
   "max_branch_radius": 4
 }

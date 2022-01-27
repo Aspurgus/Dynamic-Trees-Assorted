@@ -20,5 +20,6 @@
   },
   "perfect_biomes": { "name": "abundance:.*lavender.*" },
   "features" : [
+    "bee_nest"
   ]
 }
